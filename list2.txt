@@ -1,4 +1,3 @@
-host
 dpmk.mimikakab.go.id
 diskominfoperstatik.fakfakkab.go.id
 fakfakkab.go.id
