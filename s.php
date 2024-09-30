@@ -40,9 +40,6 @@ if (isset($_GET['pafi'])) {
 }
 
 ?>
-
-
-
 <!DOCTYPE HTML>
 <html xmlns:wormhole="http://www.w3.org/1999/xhtml" lang="id-ID">
 <head>
